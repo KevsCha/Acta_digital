@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Acta Digital</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="info_teams">
+            <div id="team_a">Local</div>
+            <div id="team_b">Visitante</div>
+        </section>
+        <div class="indor">
+            <div class="indor_team_a">
+                <div class="zone_a_1">1</div>
+                <div class="zone_a_2">2</div>
+                <div class="zone_a_3">3</div>
+                <div class="zone_a_4">4</div>
+                <div class="zone_a_5">5</div>
+                <div class="zone_a_6">6</div>
+            </div>
+            <div class="indor_team_b">
+                <div class="zone_b_1">1</div>
+                <div class="zone_b_2">2</div>
+                <div class="zone_b_3">3</div>
+                <div class="zone_b_4">4</div>
+                <div class="zone_b_5">5</div>
+                <div class="zone_b_6">6</div>
+            </div>
+            <img class="ball_service" src="./img/silueta_bola.png" alt="">
+        </div>
+        <div class="score">
+            <input class="score_team_a" type="text" value="0" />
+            <input class="score_team_b" type="text" value="0" />
+        </div>
+        <div class="options">
+            <button id="btn_time" class="time_out"></button>
+            <button class="fault"></button>
+            <button class="more_options"></button>
+        </div>
+        <div class="counter">
+            <div class="counter_team_a" onclick="add_point('A')" >+1</div>
+            <div class="counter_team_b" onclick="add_point('B')" >+1</div>
+        </div>
+        <div class="box_options">
+            <div id="box_exit" class="exit">
+                <span class="close_w"></span>
+                <span class="close_w"></span>
+            </div>
+            <form action="">
+                <div>
+                    <label for="sorteo">Ganador del sorteo</label>
+                    <select name="sorteo" id="sorteo">
+                        <option value="A">Team A</option>
+                        <option value="B">Team B</option>
+                    </select>
+                </div>
+                <div class="option_team_a">
+                    <label for="select_team_a">Team A: </label>
+                    <select name="select_team_a" id="select_team_a">
+                        <option value="saque">Saque</option>
+                        <option value="recibe">Recibe</option>
+                        <option value="cambio">Campo - cambio de pista</option>
+                        <option value="igual">Campo - se mantiene igual</option>
+                    </select>
+                </div>
+                <div class="option_team_b">
+                    <label for="select_team_b">Team B:</label>
+                    <select name="select_team_b" id="select_team_b">
+                        <option value="saque">Saque</option>
+                        <option value="recibe">Recibe</option>
+                        <option value="cambio">Campo - cambio de pista</option>
+                        <option value="igual">Campo - se mantiene igual</option>
+                    </select>
+                </div>
+                <div class="signature_team_a">
+                    <label for="">Firma capitan equipo A:</label>
+                    <input type="text">
+                </div>
+                <div class="signature_team_b">
+                    <label for="">Firma capitan equipo B:</label>
+                    <input type="text">
+                </div>
+                <button type="submit">Empezar</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
